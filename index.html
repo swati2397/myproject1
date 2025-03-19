@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== Start Navbar Section ========== -->
+
+    <nav class="navbar">
+        <a href="#" class="logo">NETFLIX</a>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#tv-shows">TV Shows</a>
+            <a href="#movies">Movies</a>
+            <a href="#new-popular">New & Popular</a>
+            <a href="#my-list">My List</a>
+        </div>
+
+        <div class="nav-right">
+            <div class="search">
+                <input type="text" class="search-input" id="search-bar" placeholder="Titles, genres">
+                <span class="search-icon">🔍</span>
+            </div>
+
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== End Navbar Section ========== -->
+
+    <!-- ========== Start Hero Section ========== -->
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Unlimited Movies, TV Shows And More</h1>
+            <p class="hero-info">
+                Watch The Latest Blockbuster Movies And TV Shows. Experience Entertainment Like Never Before With Our
+                Vast Collection Of Content.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-play" id="hero-play-btn">▶ Play</button>
+                <button class="btn btn-play" id="clear-search" style="display: none;">⬅️ Back</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== End Hero Section ========== -->
+
+
+
+    <!-- ========== Start Movies Section ========== -->
+
+    <section class="movies-section"></section>
+
+    <!-- ========== End Movies Section ========== -->
+
+
+
+    <!-- ========== Start My-list Section ========== -->
+
+    <section id="my-list">
+        <h2 class="section-title">My List</h2>
+        <div class="movie-row" id="my-list-container"></div>
+        <p id="empty-list">Your list is empty. Add some movies! 🎬</p>
+
+    </section>
+
+    <!-- ========== End My-list Section ========== -->
+
+
+    <!-- ========== Start Footer Section ========== -->
+
+    <header class="header">
+        <a href="#" class="sign-in-btn" id="openSignIn">Sign In</a>
+
+        <div class="sign-in" id="signInBox">
+            <div class="sign-in-content">
+                <span class="close-btn" id="closeSignIn">&times;</span>
+
+                <form id="signInForm">
+                    <input type="email" id="email" placeholder="Email" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <p class="footer-call">Questions? Call <a href="tel:000-800-919-1743">000-800-919-1743</a></p>
+
+        <div class="footer-links">
+            <div>
+                <a href="#">FAQ</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Privacy</a>
+                <a href="#">Speed Test</a>
+            </div>
+            <div>
+                <a href="#">Help Centre</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            </div>
+            <div>
+                <a href="#">Account</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            </div>
+            <div>
+                <a href="#">Media Centre</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="language-selector">
+            <select id="language">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
+
+        <p class="footer-country">Netflix India</p>
+    </footer>
+
+    <!-- ========== End Footer Section ========== -->
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+    <script src="api.js"></script>
+
+</body>
+
+</html>
