@@ -482,6 +482,19 @@ body {
     top: 10px;
 }
 
+@media (max-width: 768px) {
+    .nav-links, .nav-right {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
 @media (min-width: 600px) {
     .footer-links {
         display: flex;
