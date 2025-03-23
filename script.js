@@ -18,6 +18,10 @@ searchIcon.addEventListener("click", () => {
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 
+document.getElementById("hamburger-menu").addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.toggle("show");
+  });
+
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
